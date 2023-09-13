@@ -59,6 +59,7 @@ body{
   overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
 }
 
 .main{
@@ -116,4 +117,34 @@ p{
   color: white;
   font-family: var(--ff-Montserrat);
   font-weight: var(--fw-bold);
+}
+
+
+@media (min-width: 375px)
+{
+
+  .img-container{
+    height: 100%;
+    flex: 1;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+
+  }
+
+  .img-container img{
+    content: url('images/image-product-desktop.jpg');
+    object-fit: cover;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    
+    
+  }
+
+  .card{
+    flex-direction: row;
+    width: 40%;
+    height: 80%;
+  }
+  
 }
